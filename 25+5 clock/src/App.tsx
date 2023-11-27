@@ -61,14 +61,14 @@ function App() {
     if(!timeLeft && timingType === "SESSION") {
       setTimeLeft(breakLength * 60)
       setTimingType("BREAK")
-      audio.play()
+     /*  audio.play() */
     }
 
     if(!timeLeft && timingType === "BREAK") {
       setTimeLeft(sessionLength * 60)
       setTimingType("SESSION")
-      audio.pause()
-      audio.currentTime = 0;
+      /* audio.pause()
+      audio.currentTime = 0; */
     }
   }
 
@@ -90,8 +90,8 @@ function App() {
     setSessionLength(25);
     setTimingType("SESSION");
     const audio = document.getElementById("beep");
-    audio.pause();
-    audio.currentTime = 0;
+    /* audio.pause();
+    audio.currentTime = 0; */
   };
 
   useEffect(() => {
